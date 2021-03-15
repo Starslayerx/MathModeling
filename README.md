@@ -1,5 +1,6 @@
 # MathModeling
 Python tools for math modeling
+![python-libs](./resources/python_libs.jpg)
 ### 文件结构
 - Basic: 基础工具使用方法
   - Sympy

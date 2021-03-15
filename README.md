@@ -6,3 +6,7 @@ Python tools for math modeling
     符号计算库
 - Experiment: 具体实验
 - Knowledge: 理论知识及其python实现
+
+### 文档
+待编辑---
+[mathmodeling](https://mathmodeling.readthedocs.io/en/latest/)

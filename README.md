@@ -12,4 +12,4 @@ Python tools for math modeling
 
 ### 文档
 待编辑---
-[mathmodeling](https://mathmodeling.readthedocs.io/en/latest/)
+[mathmodeling](https://mathmodeling.readthedocs.io/zh_CN/latest/)

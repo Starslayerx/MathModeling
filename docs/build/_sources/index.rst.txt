@@ -5,6 +5,12 @@
 
 .. contents:: 目录
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   Sympy
+
 
 ############
 第一章
@@ -41,9 +47,6 @@
 线性最小二乘法
 ==============
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
 
 ****************

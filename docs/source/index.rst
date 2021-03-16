@@ -3,7 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-欢迎使用数学建模文档
+=================
+目录
+=================
+拟合
 =================
 
 .. toctree::
@@ -12,7 +15,7 @@
 
 
 
-索引
+其他
 =======
 
 * :ref:`genindex`

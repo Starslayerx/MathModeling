@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>第一章 &mdash; MathModeling 0.1 文档</title>
+  <title>拟合问题描述 &mdash; MathModeling 0.1 文档</title>
   
 
   
@@ -41,8 +41,7 @@
 
     
     <link rel="index" title="索引" href="genindex.html" />
-    <link rel="search" title="搜索" href="search.html" />
-    <link rel="next" title="Sympy Basic" href="Sympy.html" /> 
+    <link rel="search" title="搜索" href="search.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -87,11 +86,13 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Sympy.html">Sympy Basic</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">拟合问题描述</a></li>
+<li><a class="reference internal" href="#id2">最小二乘拟合</a></li>
+<li><a class="reference internal" href="#id3">线性最小二乘法</a></li>
 </ul>
-
+</div>
             
           
         </div>
@@ -138,13 +139,13 @@
     
       <li><a href="#" class="icon icon-home"></a> &raquo;</li>
         
-      <li>第一章</li>
+      <li>拟合问题描述</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/index.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -181,76 +182,50 @@
     text-align: unset;
 }
 </style>
-<div class="contents topic" id="id1">
-<p class="topic-title">目录</p>
+<p>.. MathModeling documentation master file, created by
+sphinx-quickstart on Mon Mar 15 17:29:21 2021.
+You can adapt this file completely to your liking, but it should at least
+contain the root <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive.</p>
+<p>.. contents:: 目录</p>
+<p>.. toctree::
+:maxdepth:3
+:caption: Contents:</p>
+<p>Sympy</p>
+<p>############
+第一章
+############</p>
+<p>############
+第二章
+############</p>
+<hr class="docutils" />
+<p>第八讲 拟合</p>
+<hr class="docutils" />
+<div class="section" id="id1">
+<h1>拟合问题描述<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<p>给定一批数据点，需要确定满足要求的曲线或曲面，这种问题一般有两种方法</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#id2" id="id9">第一章</a></p></li>
-<li><p><a class="reference internal" href="#id3" id="id10">第二章</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id4" id="id11">第八讲 拟合</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id5" id="id12">拟合问题描述</a></p></li>
-<li><p><a class="reference internal" href="#id6" id="id13">最小二乘拟合</a></p></li>
-<li><p><a class="reference internal" href="#id7" id="id14">线性最小二乘法</a></p>
-<ul>
-<li><p><a class="reference internal" href="#id8" id="id15">其他</a></p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Sympy.html">Sympy Basic</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Sympy.html#basicccc">basicccc</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="id2">
-<h1><a class="toc-backref" href="#id9">第一章</a><a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
-</div>
-<div class="section" id="id3">
-<h1><a class="toc-backref" href="#id10">第二章</a><a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
-<div class="section" id="id4">
-<h2><a class="toc-backref" href="#id11">第八讲 拟合</a><a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
-<div class="section" id="id5">
-<h3><a class="toc-backref" href="#id12">拟合问题描述</a><a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h3>
-<dl class="simple">
-<dt>给定一批数据点，需要确定满足要求的曲线或曲面，这种问题一般有两种方法</dt><dd><ul class="simple">
 <li><p>插值法</p></li>
 <li><p>曲线拟合或回归</p></li>
 </ul>
-</dd>
-</dl>
 <p>若求曲线通过所有数据点，就是 <em>插值</em> 问题，若要反应其整体变化趋势，就是 <em>拟合</em> 问题。</p>
-<dl class="simple">
-<dt>曲线拟合一般分为两个步骤:</dt><dd><ul class="simple">
+<p>曲线拟合一般分为两个步骤:</p>
+<ul class="simple">
 <li><p>选择曲线公式</p></li>
 <li><p>计算曲线参数</p></li>
 </ul>
-</dd>
-</dl>
 </div>
-<div class="section" id="id6">
-<h3><a class="toc-backref" href="#id13">最小二乘拟合</a><a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h3>
+<div class="section" id="id2">
+<h1>最小二乘拟合<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h1>
 </div>
-<div class="section" id="id7">
-<h3><a class="toc-backref" href="#id14">线性最小二乘法</a><a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h3>
-<div class="section" id="id8">
-<h4><a class="toc-backref" href="#id15">其他</a><a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h4>
+<div class="section" id="id3">
+<h1>线性最小二乘法<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h1>
+<p>其他</p>
+<hr class="docutils" />
 <ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">模块索引</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">搜索页面</span></a></p></li>
+<li><p>:ref:<code class="docutils literal notranslate"><span class="pre">genindex</span></code></p></li>
+<li><p>:ref:<code class="docutils literal notranslate"><span class="pre">modindex</span></code></p></li>
+<li><p>:ref:<code class="docutils literal notranslate"><span class="pre">search</span></code></p></li>
 </ul>
-</div>
-</div>
-</div>
 </div>
 
 
@@ -258,9 +233,6 @@
            
           </div>
           <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Sympy.html" class="btn btn-neutral float-right" title="Sympy Basic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
 
   <hr/>
 

@@ -11,4 +11,5 @@ Python tools for math modeling
 - Knowledge: 理论知识及其python实现
 
 ### 文档
-文档迁移至[WIKI](https://github.com/Starslayerx/MathModeling/wiki)
+- Python工具使用文档[WIKI](https://github.com/Starslayerx/MathModeling/wiki)
+- 理论知识文档: [github pages](https://starslayerx.github.io/MathModeling/)

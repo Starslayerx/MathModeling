@@ -9,11 +9,6 @@
    :maxdepth: 1 
    :hidden:
    :caption: Chapter 1:
-      docs/Sympy.md
-      docs/Nextworkx.md
-
-.. toctree::
-   :maxdepth: 2 
-   :hidden:
-   :caption: Chapter 2:
+      docs/Sympy
+      docs/Nextworkx
       docs/Fitting.md

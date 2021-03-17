@@ -6,12 +6,12 @@ copyright = '2021, starslayerx'
 author = 'starslayerx'
 release = '0.1'
 
+source_parsers = {'.md': 'recommonmark.parser.CommonMarkParser'}
 source_suffix = ['.rst', '.md']
 
 extensions = [
     "sphinx.ext.mathjax",
-    "recommonmark",
-    "sphinx_markdown_tables",
+    "myst_parser",
 ]
 
 
